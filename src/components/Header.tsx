@@ -5,7 +5,7 @@ export default function Header() {
     <header className="bg-white py-4 px-8">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/" className="text-xl font-normal">
-          Ryota Hayashi
+          Ryuta Hayashi
         </Link>
         <nav>
           <ul className="flex space-x-6">

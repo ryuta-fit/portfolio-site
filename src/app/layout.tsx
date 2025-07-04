@@ -10,8 +10,8 @@ const notoSansJp = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
-  title: "Ryota Hayashi Portfolio",
-  description: "Portfolio of Ryota Hayashi",
+  title: "Ryuta Hayashi Portfolio",
+  description: "Portfolio of Ryuta Hayashi",
 };
 
 export default function RootLayout({
