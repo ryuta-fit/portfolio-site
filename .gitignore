@@ -39,3 +39,45 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+Thumbs.db
+
+# Temporary files
+*.log
+*.tmp
+.cache/
+
+# PWA files
+workbox-*.js
+sw.js
+
+# Sitemap & SEO
+sitemap*.xml
+robots.txt
+rss.xml
+
+# Storybook
+storybook-static/
+
+# Contentful
+.contentful.json
+
+# Netlify
+.netlify/
+
+# Local development
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Claude Code settings
+.claude/

@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Inter', 'Noto Sans JP', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+a {
+  color: #111827;
+  text-decoration: none;
+}
+
+
+/* \u30b9\u30e0\u30fc\u30ba\u30b9\u30af\u30ed\u30fc\u30eb */
+html {
+  scroll-behavior: smooth;
+}
+
+/* \u65e5\u672c\u8a9e\u30d5\u30a9\u30f3\u30c8\u306e\u8aad\u307f\u8fbc\u307f */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap');
+
+/* \u30df\u30cb\u30de\u30eb\u30a2\u30cb\u30e1\u30fc\u30b7\u30e7\u30f3 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-out;
+}
+
+/* \u30bb\u30af\u30b7\u30e7\u30f3\u30bf\u30a4\u30c8\u30eb */
+.section-title {
+  @apply text-4xl md:text-5xl font-light tracking-tight mb-16 text-center;
+}
+
+/* \u30ab\u30b9\u30bf\u30e0\u30dc\u30bf\u30f3 */
+.btn-primary {
+  @apply relative px-8 py-3 overflow-hidden transition-all duration-300;
+  @apply border-2 border-gray-900 text-gray-900;
+  @apply hover:text-white;
+}
+
+.btn-primary::before {
+  content: '';
+  @apply absolute inset-0 bg-gray-900;
+  @apply transform -translate-x-full transition-transform duration-300;
+}
+
+.btn-primary:hover::before {
+  @apply translate-x-0;
+}
+
+.btn-primary span {
+  @apply relative z-10;
+}
